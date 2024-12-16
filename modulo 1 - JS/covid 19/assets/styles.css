@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Montserrat", serif;
+    background-color: #1e2d3c;
+}
+
+.form__section {
+    width: 45%;
+    min-width: 600px;
+    margin: 2rem auto;
+    height: auto;
+    background-color: #162230;
+    padding: 1.2rem;
+    border-radius: 0.45em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
+.form__section form {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.form__section form label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form__section form label p {
+    font-size: 1.1rem;
+    color: #FFF;
+}
+
+.form__section form label input {
+    width: 10rem;
+    height: 1.70rem;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: #ececec;
+    border: 1px solid #ccc;
+}
+
+.form__section form label select {
+    width: 10rem;
+    height: 1.80rem;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: #ececec;
+    border: 1px solid #ccc;
+}
+
+.form__section form button {
+    width: 8rem;
+    height: 1.80rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0.3rem;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    background-color: #70ca84;
+}
+
+.form__section form button:hover {
+    background-color: #3f884f;
+    transition: background-color 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.chart__section {
+    width: 45%;
+    min-width: 300px;
+    margin: 2rem auto;
+    height: auto;
+    padding: 0.5rem;
+    background-color:  #162230;
+    border-radius: 0.3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+}
