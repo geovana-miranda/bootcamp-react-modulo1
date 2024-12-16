@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Catalog</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header__containter">
+        <p class="logo">Makeup Catalog</p>
+        <label for="searchProduct">
+            <span>Produto:</span>
+            <input id="searchProduct" class="header__input" type="text" placeholder="Buscar por produto">
+        </label>
+        <label for="brands">
+            <span>Marca:</span>
+            <select class="header__select" name="brands" id="brands">
+                <option value="todas">todas</option>
+                <option value="almay">almay</option>
+                <option value="alva">alva</option>
+                <option value="anna sui">anna sui</option>
+                <option value="annabelle">annabelle</option>
+                <option value="benefit">benefit</option>
+                <option value="boosh">boosh</option>
+                <option value="burt's bees">burt's bees</option>
+                <option value="butter london">butter london</option>
+                <option value="c'est moi">c'est moi</option>
+                <option value="cargo cosmetics">cargo cosmetics</option>
+                <option value="china glaze">china glaze</option>
+                <option value="clinique">clinique</option>
+                <option value="coastal classic creation">coastal classic creation</option>
+                <option value="colourpop">colourpop</option>
+                <option value="covergirl">covergirl</option>
+                <option value="dalish">dalish</option>
+                <option value="deciem">deciem</option>
+                <option value="dior">dior</option>
+                <option value="dr. hauschka">dr. hauschka</option>
+                <option value="e.l.f.">e.l.f.</option>
+                <option value="essie">essie</option>
+                <option value="fenty">fenty</option>
+                <option value="glossier">glossier</option>
+                <option value="green people">green people</option>
+                <option value="iman">iman</option>
+                <option value="l'oreal">l'oreal</option>
+                <option value="lotus cosmetics usa">lotus cosmetics usa</option>
+                <option value="maia's mineral galaxy">maia's mineral galaxy</option>
+                <option value="marcelle">marcelle</option>
+                <option value="marienatie">marienatie</option>
+                <option value="maybelline">maybelline</option>
+                <option value="milani">milani</option>
+                <option value="mineral fusion">mineral fusion</option>
+                <option value="misa">misa</option>
+                <option value="mistura">mistura</option>
+                <option value="moov">moov</option>
+                <option value="nudus">nudus</option>
+                <option value="nyx">nyx</option>
+                <option value="orly">orly</option>
+                <option value="pacifica">pacifica</option>
+                <option value="penny lane organics">penny lane organics</option>
+                <option value="physicians formula">physicians formula</option>
+                <option value="piggy paint">piggy paint</option>
+                <option value="pure anada">pure anada</option>
+                <option value="rejuva minerals">rejuva minerals</option>
+                <option value="revlon">revlon</option>
+                <option value="sally b">sally b</option>
+            </select>
+
+        </label>
+        <label for="type">
+            <span>Tipo:</span>
+            <select class="header__select" name="type" id="type">
+                <option value="todos">todos</option>
+                <option value="blush">blush</option>
+                <option value="bronzer">bronzer</option>
+                <option value="eyebrow">eyebrow</option>
+                <option value="eyeliner">eyeliner</option>
+                <option value="eyeshadow">eyeshadow</option>
+                <option value="foundation">foundation</option>
+                <option value="lip liner">lip liner</option>
+                <option value="lipstick">lipstick</option>
+                <option value="mascara">mascara</option>
+                <option value="nail polish">nail polish</option>
+        </select>
+        </label>
+
+    </header>
+    <main class="main__container">
+        <div class="main__container--top">
+            <p class="main__container--text">Nossos produtos</p>
+            <div class="order">
+                <label for="order">Ordenar por:</label>
+                <select class="order__select" name="order" id="order">
+                    <option value="rating">Melhor avaliado</option>
+                    <option value="lowest">Menor preço</option>
+                    <option value="highest">Maior preço</option>
+                    <option value="a-to-z">A-Z</option>
+                    <option value="z-to-a">Z-A</option>
+                </select>
+            </div>
+
+        </div>
+        <section class="products">
+            <div class="loading">
+                <div class="loader"></div>
+                <p class="loadind__text">Carregando produtos...</p>
+            </div>
+            <div class="notfound hidden">
+                <p class="loadind__text">Nenhum produto encontrado </p>
+            </div>
+
+        </section>
+    </main>
+    <script src="./assets/main.js" type="module"></script>
+</body>
+
+</html>
