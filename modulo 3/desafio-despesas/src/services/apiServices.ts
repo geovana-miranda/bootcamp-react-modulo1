@@ -9,14 +9,6 @@ export async function getFilterDespesas(yearAndMonth: string): Promise<IDespesas
     return data;
 }
 
-export async function getDespesas(): Promise<IDespesas[]> {
-    const res = await fetch(`http://localhost:3001/despesas`, {
-        credentials: "include",
-    });
-    const data = await res.json();
-    return data;
-}
-
 export async function startSession(email: string, senha: string): Promise<IUsers> {
     const res = await fetch(`http://localhost:3001/sessao/criar` , {
         method: "POST",
